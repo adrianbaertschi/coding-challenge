@@ -1,6 +1,7 @@
 import React from "react";
 import {Draggable} from "react-beautiful-dnd";
 import {Line} from "./CodeLinesList";
+import './CodeLine.css';
 
 const CodeLine: React.FC<{
     index: number;
@@ -10,7 +11,7 @@ const CodeLine: React.FC<{
         <Draggable draggableId={props.line.no.toString()}
                    index={props.index}>
             {(provided) => (
-                <div
+                <div className="line"
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     ref={provided.innerRef}

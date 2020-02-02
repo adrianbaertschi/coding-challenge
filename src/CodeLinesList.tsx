@@ -1,6 +1,7 @@
 import React from "react";
 import CodeLine from "./CodeLine";
 import {Droppable} from "react-beautiful-dnd";
+import "./CodeLinesList.css"
 
 export interface Line {
     no: number;
@@ -18,7 +19,8 @@ const CodeLinesList: React.FC = () => {
         return (
             <Droppable droppableId={'droppable'}>
                 {(provided, snapshot) => (
-                    <div ref={provided.innerRef}
+                    <div className="code-lines-list"
+                        ref={provided.innerRef}
                          {...provided.droppableProps}>
                         {
                             codeData.map((line, index) => {
