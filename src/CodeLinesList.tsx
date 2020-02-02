@@ -10,6 +10,8 @@ export interface Line {
 
 const CodeLinesList: React.FC = () => {
 
+        // TODO: read code from file?
+        // TODO: shuffle lines
         const codeData: Line[] = [
             {no: 1, code: 'abc'},
             {no: 2, code: 'def'},
@@ -18,9 +20,9 @@ const CodeLinesList: React.FC = () => {
 
         return (
             <Droppable droppableId={'droppable'}>
-                {(provided, snapshot) => (
+                {(provided) => (
                     <div className="code-lines-list"
-                        ref={provided.innerRef}
+                         ref={provided.innerRef}
                          {...provided.droppableProps}>
                         {
                             codeData.map((line, index) => {

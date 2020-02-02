@@ -8,11 +8,19 @@ const App: React.FC = () => {
     function onDragEnd() {
     }
 
+    function check() {
+        // TODO check
+    }
+
     return (
-        <DragDropContext onDragEnd={onDragEnd}>
-            <CodeLinesList/>
-        </DragDropContext>
+        <div>
+            <DragDropContext onDragEnd={onDragEnd}>
+                <CodeLinesList/>
+            </DragDropContext>
+            <button onClick={check}>Check</button>
+        </div>
     );
-}
+};
+
 
 export default App;
