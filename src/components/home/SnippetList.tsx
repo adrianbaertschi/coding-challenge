@@ -1,13 +1,8 @@
 import React from "react";
-import "../snippet/CodeLinesList.css"
+import "../snippet/SnippetDetail.css"
 import {Link} from "react-router-dom";
-import {Line} from "../snippet/CodeLinesList";
+import {Snippet} from "../../model/Model";
 
-export interface Snippet {
-    name: string;
-    description: string;
-    lines: Line[]
-}
 
 const SnippetList: React.FC<{
         snippets: Snippet[]

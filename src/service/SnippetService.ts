@@ -1,4 +1,4 @@
-import {Snippet} from "../components/home/SnippetList";
+import {Snippet} from "../model/Model";
 
 class SnippetService {
     code: Snippet[] =

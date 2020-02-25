@@ -1,8 +1,8 @@
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import React from 'react';
 import './App.css';
-import {Home} from "./Home";
-import {SnippetDetail} from "../snippet/SnippetDetail";
+import {Home} from "./home/Home";
+import {SnippetDetail} from "./snippet/SnippetDetail";
 
 const App: React.FC = () => {
     return (

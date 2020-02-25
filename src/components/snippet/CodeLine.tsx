@@ -1,7 +1,7 @@
 import React from "react";
 import {Draggable} from "react-beautiful-dnd";
-import {Line} from "./CodeLinesList";
 import './CodeLine.css';
+import {Line} from "../../model/Model";
 
 const CodeLine: React.FC<{
     index: number;
